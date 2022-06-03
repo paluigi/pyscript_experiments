@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - matplotlib
+            - imageio
+            - pandas
+            - numpy
+        </py-env>
+        <style>
+            ul {
+                list-style-type: circle;
+                list-style-position: outside;
+                margin: 20px;
+                padding: 5px;
+            }
+            h1 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <div>
+        <h1>PyScript REPL</h1>
+        <p>This webpage implements a REPL with PyScript.</p>
+        <p>The following packages have been loaded into the environment:</p>
+        <ul>
+            <li>matplotlib</li>
+            <li>imageio</li>
+            <li>pandas</li>
+            <li>numpy</li>
+        </ul>
+        <p>Output is displayed below the REPL box.</p>
+    </div>
+    
+    <py-repl></py-repl>
+</html>
+<!-- Example PyScript code: -->
+<!-- 
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame({
+    'col1': ['A', 'A', 'B', np.nan, 'D', 'C'],
+    'col2': [2, 1, 9, 8, 7, 4],
+    'col3': [0, 1, 9, 4, 2, 3],
+    'col4': ['a', 'B', 'c', 'D', 'e', 'F']
+})
+df.head()
+-->
